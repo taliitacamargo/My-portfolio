@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: #08080f;
+    color: #FFC857;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    
+      
+  }
+
+
+h1 {
+    font-size: 200%;
+    transition: all 1s ease;
+}
+
+nav, ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    min-width: 230px;
+}
+
+nav, a, i {
+    text-decoration: none;
+    color: white;
+}
+
+.background {
+    width: 100%;
+    height: 300px;
+    opacity: 50%;
+    margin-bottom: 25px;
+    background-image: url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?k=20&m=1224500457&s=170667a&w=0&h=XzYyHReOY2K1R-rZeQIUXGHLsOJuFHLYtRL7AWR-6GY=");
+    background-size: cover;
+    background-position: center;
+}
+
+/*--------------------------------------------*/
+body {
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    line-height: 1.3;
+    background: linear-gradient(to right bottom, rgba(11, 11, 63, 0.8), rgb(0, 0, 0));
+}
+.main-content {
+    background: #171322;
+    width: 1000px;
+    word-wrap: break-word;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    float: left;
+    border-radius: 5px;
+    padding-right: 10px;
+}
+
+.float-left, 
+.float-right,
+.float-center {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+/* .column{ 
+    float:left;
+    width: 25%;
+}*/
+.projects {
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+box-align: center;
+}
+
+.column {
+    width: 33.33%;
+}
+  
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    padding: 5px;
+}
+
+.center-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    padding: 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .column,
+    .main-content,
+    .container {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column,
+    .main-content,
+    .container {
+      width: 100%;
+    }
+  }
