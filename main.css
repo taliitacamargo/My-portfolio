@@ -3,11 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+/*---------------header begins here-------------*/
 header {
     padding: 10px;
     text-align: center;
-    background: #08080f;
+    background: hsl(240, 30%, 5%);
     color: #FFC857;
     font-size: 20px;
     display: flex;
@@ -19,116 +19,245 @@ header {
       
   }
 
-
+/*h1 styling*/
 h1 {
-    font-size: 200%;
+    font-size: 150%;
     transition: all 1s ease;
+    margin: 5px;
 }
 
-nav, ul {
+/*my name hover effects*/
+h1:hover{
+    transform:rotate3d(1, 1, 1, 10deg);
+    color:#c7c7db;
+    box-shadow: 1px 2px 5px #ffffff;
+    border-radius:2px;
+}
+
+/*nav-bar content styling*/
+.nav-bar-content,
+.nav-bar {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     min-width: 230px;
+    margin: 5px;
 }
 
+/*nav bar and links icons hover effect*/
+ #about:hover
+,#contact:hover
+,#project:hover
+,.fa-github:hover
+,.fa-linkedin-square:hover 
+,.fa-envelope:hover {
+    opacity:60%;
+    background:#171322;
+    border: 3px #08070c;;   
+}
+
+/* header + links text styling*/
 nav, a, i {
     text-decoration: none;
     color: white;
 }
 
+/* background picture styling*/
 .background {
     width: 100%;
-    height: 300px;
+    height: 400px;
     opacity: 50%;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     background-image: url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?k=20&m=1224500457&s=170667a&w=0&h=XzYyHReOY2K1R-rZeQIUXGHLsOJuFHLYtRL7AWR-6GY=");
     background-size: cover;
     background-position: center;
 }
 
-/*--------------------------------------------*/
+
+/*-------------------header styling ends---------------------*/
+/* body styling*/
 body {
     font-family:'Times New Roman', Times, serif;
     color: white;
     line-height: 1.3;
     background: linear-gradient(to right bottom, rgba(11, 11, 63, 0.8), rgb(0, 0, 0));
 }
+
+/* introduction container styling*/
 .main-content {
     background: #171322;
-    width: 1000px;
+    width: 1300px;
     word-wrap: break-word;
     margin: 0 auto;
-    overflow: hidden;
     padding: 50px;
     border-radius: 5px;
 }
 
+/* my profile picture*/
 .profile-picture {
-    width: 250px;
+    width: 300px;
     height: 300px;
     object-fit: cover;
     float: left;
     border-radius: 5px;
-    padding-right: 10px;
+    padding-right: 15px;
+    padding-bottom: 15px;
 }
 
+
+/*--------------------main section (first section)ends here--------------------*/
+/* projects container styling*/
+.row {
+    background: #171322;
+    width: 1300px;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 5px;
+
+}
+
+/* project images styling*/
 .float-left, 
 .float-right,
 .float-center {
-    width: 350px;
-    height: 300px;
+    height: 250px;
+    width: 100%;
     object-fit: cover;
+    flex: 33.33%;
+    padding: 5px;
+    border-radius: 10px;
     
 }
-
-/* .column{ 
-    float:left;
-    width: 25%;
-}*/
-.projects {
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-box-align: center;
+/*project images hover effect */
+.float-left:hover,
+.float-right:hover,
+.float-center:hover {
+    box-shadow: 0 0 5px;
+    color:#c7c7db;
+    box-shadow: 0px 0px 8px #ffffff;
+    border: 10px #171322;
 }
 
-.column {
-    width: 33.33%;
+/*project images' container styling*/
+.my-projects {
+    display: flex;
+    padding: 15px;
 }
-  
 
-h2 {
+
+/*languages known centering*/
+.center-text {
     margin-left: auto;
     margin-right: auto;
+    width: 17em;
+    padding: 5px;
+}
+
+/*container's "titles"*/
+h2 {
+    margin: 0 auto;
     width: 8em;
     padding: 5px;
 }
 
-.center-text {
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em;
+/* index bar between containers*/
+hr {
+    height: 9px;
+    width:25%;
+    border:#c7c7db;
+    border-radius: 5px;
+    background-color:#c7c7db;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.links {
+    width: 8em;
+    display: block;
+    margin: 0 auto;
+    padding-right:30px;
+}
+
+.links-list {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.fa-linkedin-square,
+.fa-github,
+.fa-envelope {
     padding: 5px;
 }
 
 
 
+/*--------------------second section main section ends------------------------*/
 
-
-@media screen and (max-width: 992px) {
-    .column,
-    .main-content,
-    .container {
-        width: 120%;
-    }
+footer {
+    color:#c7c7db;
+    font-family:'Times New Roman', Times, serif; 
+    padding: 10px;
+    text-align: center;
+    font-weight:bolder;
+    background: hsl(240, 30%, 5%);
+    margin-top: 5px;
 }
 
-@media screen and (max-width: 768px) {
-    .column,
-    .main-content,
-    .container {
-      width: 100%;
+
+
+
+
+
+/*---------------media queries for responsiveness----------*/
+
+@media screen and (max-width: 1600px) {
+    main {
+        width: 100%;
     }
-  }
+      
+    header,
+    .my-projects,
+    .main-content  {
+        flex-direction: column;
+    }
+    
+    .profile-picture,
+    .float-right,
+    .float-left,
+    .float-center,
+    .main-content,
+    .row  {
+        width: 100%;
+    }
+    
+    }
+
+
+
+@media screen and (max-width: 768px) {
+
+
+main { 
+    width: 100%;
+}
+  
+header,
+.my-projects,
+.main-content  {
+    flex-direction: column;
+}
+
+.profile-picture,
+.float-right,
+.float-left,
+.float-center,
+.main-content,
+.row  {
+    width: 100%;
+}
+
+}
