@@ -121,7 +121,8 @@ body {
 .float-left, 
 .float-right,
 .float-center {
-    height: 250px;
+    display:block;
+    height: 350px;
     width: 100%;
     object-fit: cover;
     flex: 33.33%;
@@ -129,6 +130,8 @@ body {
     border-radius: 10px;
     
 }
+
+
 /*project images hover effect */
 .float-left:hover,
 .float-right:hover,
@@ -139,10 +142,31 @@ body {
     border: 10px #171322;
 }
 
+.title-container {
+        position:relative;
+        
+}
+
+.bottom {
+    position: absolute;
+    bottom: 7px;
+    left: 85px;
+    color:white;
+    background: rgb(146, 144, 144);
+    background: rgba(61, 59, 59, 0.5);
+    font-size: 20px;
+    padding: 15px;
+    transition: .5s ease;
+    border-radius: 5px;
+  }
+
+
+
 /*project images' container styling*/
 .my-projects {
     display: flex;
     padding: 15px;
+    
 }
 
 
