@@ -34,14 +34,11 @@ h1:hover{
     border-radius:2px;
 }
 
-/*nav-bar content styling*/
-.nav-bar-content,
-.nav-bar {
+
+
+.nav-bar,
+.links-list  {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    min-width: 230px;
-    margin: 5px;
 }
 
 /*nav bar and links icons hover effect*/
@@ -96,7 +93,7 @@ body {
 /* my profile picture*/
 .profile-picture {
     width: 300px;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
     float: left;
     border-radius: 5px;
@@ -196,26 +193,23 @@ hr {
     padding: 5px;
 }
 
-.links {
+/* .links {
     width: 8em;
     display: block;
     margin: 0 auto;
     padding-right:30px;
-}
+} */
 
-.links-list {
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
+/* .links-list {
+
     margin: 0 auto;
-}
+} */
 
-.fa-linkedin-square,
+/* .fa-linkedin-square,
 .fa-github,
 .fa-envelope {
     padding: 5px;
-}
+} */
 
 
 
