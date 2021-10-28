@@ -4,7 +4,7 @@ In this project, I created my portfolio from scratch. main elements were used  s
 
 ---
 
-Submission Deployed URL: https://taliitacamargo.github.io/My-portfolio/index.html GitHub Repo URL: https://github.com/taliitacamargo/My-portfolio.git
+Deployed URL: https://taliitacamargo.github.io/My-portfolio/index.html GitHub Repo URL: https://github.com/taliitacamargo/My-portfolio.git
 
 ---
 Technologies : HTML, CSS, BootStrap
