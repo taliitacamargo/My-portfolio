@@ -233,7 +233,7 @@ footer {
         flex-direction: column;
     }
     
-    .profile-picture,
+   
     .float-right,
     .float-left,
     .float-center,
@@ -243,7 +243,22 @@ footer {
     }
     
     }
+    
+@media screen and (max-width: 992px) {
+    main {
+        width: 100%;
+    }
+    
+    .float-right,
+    .float-left,
+    .float-center,
+    .main-content,
+    .row  {
+        width: 100%;
+    }
+    
 
+}
 
 
 @media screen and (max-width: 768px) {
@@ -259,7 +274,7 @@ header,
     flex-direction: column;
 }
 
-.profile-picture,
+
 .float-right,
 .float-left,
 .float-center,
