@@ -9,7 +9,8 @@ Deployed URL: https://taliitacamargo.github.io/My-portfolio/index.html GitHub Re
 ---
 Technologies : HTML, CSS, BootStrap
 
-![My-Portfolio (2)](https://user-images.githubusercontent.com/88398240/139326375-f609631a-ab3c-419a-bcda-b2f3fb8a210b.jpg)
+![My Portfolio update](https://user-images.githubusercontent.com/88398240/139465193-07bc02d9-d216-4718-9a10-19c7942096a1.jpg)
+
 
 
 Contact: taliitacamargo@icloud.com
