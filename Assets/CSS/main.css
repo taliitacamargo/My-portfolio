@@ -212,6 +212,7 @@ footer {
     .my-projects,
     .main-content  {
         flex-direction: column;
+       
     }
     
    
@@ -253,6 +254,11 @@ header,
 .my-projects,
 .main-content  {
     flex-direction: column;
+    
+}
+
+.nav-bar-content {
+    margin-right: 25px;
 }
 
 
