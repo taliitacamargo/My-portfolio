@@ -34,14 +34,11 @@ h1:hover{
     border-radius:2px;
 }
 
-/*nav-bar content styling*/
-.nav-bar-content,
-.nav-bar {
+
+
+.nav-bar,
+.links-list  {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    min-width: 230px;
-    margin: 5px;
 }
 
 /*nav bar and links icons hover effect*/
@@ -62,27 +59,27 @@ nav, a, i {
     color: white;
 }
 
-/* background picture styling*/
-.background {
-    width: 100%;
-    height: 400px;
-    opacity: 50%;
-    margin-bottom: 15px;
-    background-image: url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?k=20&m=1224500457&s=170667a&w=0&h=XzYyHReOY2K1R-rZeQIUXGHLsOJuFHLYtRL7AWR-6GY=");
-    background-size: cover;
-    background-position: center;
-}
+
+
 
 
 /*-------------------header styling ends---------------------*/
 /* body styling*/
 body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: url("https://media.istockphoto.com/photos/programming-code-abstract-technology-background-of-software-developer-picture-id1224500457?k=20&m=1224500457&s=170667a&w=0&h=XzYyHReOY2K1R-rZeQIUXGHLsOJuFHLYtRL7AWR-6GY=");
+    background-size: cover;
     font-family:'Times New Roman', Times, serif;
     color: white;
     line-height: 1.3;
-    background: linear-gradient(to right bottom, rgba(11, 11, 63, 0.8), rgb(0, 0, 0));
 }
 
+main {
+    margin: 20px;
+}
 /* introduction container styling*/
 .main-content {
     background: #171322;
@@ -96,7 +93,7 @@ body {
 /* my profile picture*/
 .profile-picture {
     width: 300px;
-    height: 300px;
+    height: 350px;
     object-fit: cover;
     float: left;
     border-radius: 5px;
@@ -116,18 +113,18 @@ body {
     border-radius: 5px;
 
 }
-
-/* project images styling*/
+/* 
+project images styling*/ 
 .float-left, 
 .float-right,
 .float-center {
-    display:block;
-    height: 350px;
-    width: 100%;
+    height: 400px;
+    width: 400px;
     object-fit: cover;
     flex: 33.33%;
     padding: 5px;
     border-radius: 10px;
+    margin: 5px;
     
 }
 
@@ -141,25 +138,6 @@ body {
     box-shadow: 0px 0px 8px #ffffff;
     border: 10px #171322;
 }
-
-.title-container {
-        position:relative;
-        
-}
-
-.bottom {
-    position: absolute;
-    bottom: 7px;
-    left: 85px;
-    color:white;
-    background: rgb(146, 144, 144);
-    background: rgba(61, 59, 59, 0.5);
-    font-size: 20px;
-    padding: 15px;
-    transition: .5s ease;
-    border-radius: 5px;
-  }
-
 
 
 /*project images' container styling*/
@@ -201,21 +179,8 @@ hr {
     display: block;
     margin: 0 auto;
     padding-right:30px;
-}
+} 
 
-.links-list {
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.fa-linkedin-square,
-.fa-github,
-.fa-envelope {
-    padding: 5px;
-}
 
 
 
@@ -249,7 +214,7 @@ footer {
         flex-direction: column;
     }
     
-    .profile-picture,
+   
     .float-right,
     .float-left,
     .float-center,
@@ -259,7 +224,22 @@ footer {
     }
     
     }
+    
+@media screen and (max-width: 992px) {
+    main {
+        width: 100%;
+    }
+    
+    .float-right,
+    .float-left,
+    .float-center,
+    .main-content,
+    .row  {
+        width: 100%;
+    }
+    
 
+}
 
 
 @media screen and (max-width: 768px) {
@@ -275,7 +255,7 @@ header,
     flex-direction: column;
 }
 
-.profile-picture,
+
 .float-right,
 .float-left,
 .float-center,
