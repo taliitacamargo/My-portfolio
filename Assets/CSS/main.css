@@ -118,8 +118,8 @@ project images styling*/
 .float-left, 
 .float-right,
 .float-center {
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
     object-fit: cover;
     flex: 33.33%;
     padding: 5px;
